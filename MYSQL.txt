@@ -1,0 +1,29 @@
+1. Go to C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+2. Open cmd
+
+3. mysql -u root -p
+
+4. enter password
+
+5. show databases;
+
+6. use <database>;
+
+7. show tables;
+
+8. quit
+
+9. mysql --local-infile=1 -u root -p
+
+10. enter password
+
+# Load the data
+
+LOAD DATA LOCAL INFILE 'D:\\Projects Series\\Python-to-SQL\\data\\student_performance.csv'
+INTO TABLE student
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
+
+
